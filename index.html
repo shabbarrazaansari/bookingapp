@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name</label>
+      <input type="text" name="Name" id="name" placeholder="Full Name" required>
+      <label for="email">Email</label>
+      <input type="email" name="Email" id="email" placeholder="Email Address" required>
+      <label for="password">Password</label>
+      <input type="password" name="Password" id="Password" placeholder="Password" required>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+  <script>
+   function registeruser()
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('mail').value;
+            const phone = document.getElementById('teln').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            
+            localStorage.setItem('Name',name);
+            localStorage.setItem('Email',email);
+            localStorage.setItem('Phone No.',phone);
+            localStorage.setItem('Date',date);
+            localStorage.setItem('Time',time);
+            console.log(name)
+            console.log(email)
+            console.log(phone)
+            console.log(date)
+            console.log(time)
+    </script>
+</body>
+</html>
